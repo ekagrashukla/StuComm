@@ -40,7 +40,7 @@ app.post("/register", async (req,res) => {
             address: req.body.addr
         })
         const reg = await registerStudent.save();
-        res.status(201).render("index");
+        res.status(201).send("Registration Successful!!! We'll contact you soon");
     } catch (e) {
         res.status(400).send(e);
     }
