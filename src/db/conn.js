@@ -1,9 +1,8 @@
 const mongoose = require('mongoose');
-const dotenv=require('dotenv');
 const express = require('express');
+var config = require('../../config.json');
 
-dotenv.config();
-const uri = process.env.SECRET_URL
+const uri = config.SECRET_URI
 
 mongoose.connect(uri)
 .then(()=>console.log("Connection to StudentAPI Database Successful.."))

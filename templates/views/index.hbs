@@ -5,7 +5,18 @@
     <title>Student Registration Form</title>
 </head>
 <body>
-    <h1>Student Registration Form</h1>
-    <a href="/register">Register</a>
+    {{>navbar}}
+    <div style="width: 100%;">
+        <div class="jumbotron">
+        <h1 class="display-4" style="color: black;">Hello, Students!</h1>
+        <p class="lead">Welcome to the biggest community of students in India</p>
+        <hr class="my-4">
+        <p>Take help, Give help</p>
+        <p class="lead">
+        <a class="btn btn-primary btn-lg" href="/register" role="button">Get Started</a>
+        </p>
+        </div>
+    </div>
+    {{>scripts}}
 </body>
 </html>

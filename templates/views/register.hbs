@@ -4,30 +4,20 @@
 {{>header}}
 </head>
 <body>
+  {{>navbar}}
     <h1>Registration Page</h1>
-    {{!-- <form action="/register" method="POST">
-        <input type="text" placeholder="username" name="username"/><br/>
-        <input type="email" placeholder="email"/ name="email"><br/>
-        <input type="number" placeholder="Mobile Number" name="phone"/><br/>
-        <input type="text" placeholder="address" name="addr"/><br/>
-        <input type="submit" value="Register"/>
-    </form> --}}
-
-<div class="login-page">
-  <div class="form">
-    <form class="register-form" ction="/register" method="POST">
-        <input type="text" placeholder="username" name="username"/><br/>
-        <input type="email" placeholder="email"/ name="email"><br/>
-        <input type="number" placeholder="Mobile Number" name="phone"/><br/>
-        <input type="text" placeholder="address" name="addr"/><br/>
-        <input class="button" type="submit" value="Register"/>
-      <p class="message">Already registered? <a href="#">Sign In</a></p>
-    </form>
-  </div>
-</div>
-
-
-
-
+    <div class="login-page">
+      <div class="form">
+        <form class="register-form" action="/register" method="POST">
+            <input class="ip" type="text" placeholder="username" name="username"/><br/>
+            <input class="ip" type="email" placeholder="email"/ name="email"><br/>
+            <input class="ip" type="number" placeholder="password" name="password"/><br/>
+            <input class="ip" type="text" placeholder="address" name="addr"/><br/>
+            <input class="button" type="submit" value="Register"/>
+          <p class="message">Already registered? <a href="login">Sign In</a></p>
+        </form>
+      </div>
+    </div>
+    {{>scripts}}
 </body>
 </html>

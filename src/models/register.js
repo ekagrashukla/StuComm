@@ -11,11 +11,10 @@ const studentSchema = new mongoose.Schema({
         required: true,
         unique: [true, "Email id already present"],
     },
-    phone:{
+    password:{
         type: Number,
-        min:10,
+        min:1,
         required: true,
-        unique: true
     },
     address:{
         type: String,
